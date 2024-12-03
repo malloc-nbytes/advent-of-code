@@ -58,6 +58,7 @@ with release = len(argv()) > 1 && argv()[1] == "release",
      }
 in
 
+# Boilerplate
 $f"cat {fp}" |> let content;
 @const let lines = content
     .split("\n")

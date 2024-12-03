@@ -65,6 +65,7 @@ with release = len(argv()) > 1 && argv()[1] == "release",
      }
 in
 
+# Boilerplate
 @const let lines = IO::file_to_str(fp)
     .split("\n")
     .filter(|l| { l != ""; });
